@@ -1,2 +1,2 @@
 # Uni-Work
-Work for uni
+Contains coursework for computational mathematics module.
