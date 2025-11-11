@@ -1,6 +1,6 @@
 import numpy
 def primes(N):
-    prime = numpy.array([True for n in range(N+1)]) # This generates an array where prime[index] returns whether index is prime or not
+    prime = numpy.array([True for n in range(N+1)])
     prime[0]=prime[1]=False # Settting 0 and 1 to not prime
     n=2
     counter = 0
@@ -12,4 +12,4 @@ def primes(N):
         counter+=1
     return numpy.where(prime == True)[0]
 N=1000000
-print(primes(N))
+print(len(primes(N)))
