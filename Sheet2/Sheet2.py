@@ -32,7 +32,7 @@ print(len(primes(N)))
 
 import numpy
 N=2001 # As p<2000 p+2<2002
-p=primes(N) # defined in Q2
+p=primes(N) # defined in Q1
 twinPrimes = [(p[i],p[i]+2) for i in range(len(p)-3) if p[i]+2 in p]
 print(f"There are {len(twinPrimes)} twin primes where p is less than {N-1}:")
 for pair in twinPrimes:
@@ -79,13 +79,11 @@ plt.show()
 
 import numpy
 import matplotlib.pyplot as plt
-
 a=0.3
 b=23
 x_axis = numpy.linspace(-2,2,10000) # increase 10000 for higher precision
-# x_axis = numpy.array(numpy.arange(-2,2,0.001))
-k_range = numpy.array(range(0,101))
 y_axis=0
+k_range = numpy.array(range(0,101))
 for k in k_range:
     y_axis+=numpy.pow(a,k)*numpy.cos(numpy.pow(b,k)*numpy.pi*x_axis)
 plt.plot(x_axis, y_axis)
